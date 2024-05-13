@@ -43,3 +43,7 @@ Unit Handling: Verify
 NaN Handling: Off
 ```
 
+Results from the price weighted average alpha:
+![results_1](https://github.com/alexisdpc/WorldQuant-alpha-trading/assets/124795834/a733fc99-f811-4c38-b5ab-de0166676607)
+
+
