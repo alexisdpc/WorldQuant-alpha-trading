@@ -1,6 +1,9 @@
 # WorldQuant alpha trading
 
-This is a guide to use the WorldQuant BRAIN paltform. We present some trading strategies with high Sharpe ratio [(see Report)](https://github.com/alexisdpc/WorldQuant-alpha-trading/blob/main/Worldquant_Report.pdf)
+WorldQuant BRAIN is an online simulation platform to build alpha ($\alpha$) signals and perform backtesting using market data. However, it is hard to find resources and documentation on the use of this platform.
+We present some trading strategies with high Sharpe ratio [(see Report)](https://github.com/alexisdpc/WorldQuant-alpha-trading/blob/main/Worldquant_Report.pdf)
+
+## American market
 
 ▶ A simple Price Reversion alpha:
 
@@ -45,5 +48,10 @@ NaN Handling: Off
 
 Results from the price weighted average alpha:
 ![results_1](https://github.com/alexisdpc/WorldQuant-alpha-trading/assets/124795834/a733fc99-f811-4c38-b5ab-de0166676607)
+
+
+
+
+## Chinese market
 
 
