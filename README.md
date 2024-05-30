@@ -54,4 +54,8 @@ Results from the price weighted average alpha:
 
 ## Chinese market
 
+▶  Volatility of daily turnover in last 20 days.
+• '''mdl175_volatility''': Volatility of daily turnover during the last 20 days.
+
+
 
