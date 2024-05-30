@@ -61,6 +61,17 @@ rank(-mdl175_volatility*log(volume))
     *(1+group_rank(mdl175_revenuettm, sector))
 ```
 with the following properties:
+```
+Region: CHN 
+Universe: Top3000
+Delay: 0
+Neutralization: Sector
+Decay: 3
+Truncation: 0.08
+Pasteurization:  On
+Unit Handling: Verify
+NaN Handling: Off
+```
 
 
 
