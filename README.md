@@ -56,6 +56,11 @@ Results from the price weighted average alpha:
 
 ▶  Volatility of daily turnover in last 20 days.\
 • <mark>mdl175_volatility</mark>: Volatility of daily turnover during the last 20 days.
+```
+rank(-mdl175_volatility*log(volume))
+    *(1+group_rank(mdl175_revenuettm, sector))
+```
+with the following properties:
 
 
 
