@@ -5,7 +5,7 @@ We present some trading strategies with high Sharpe ratio [(see Report)](https:/
 
 ## American market
 
-▶ A simple Price Reversion alpha
+▶ A simple Price Reversion alpha:
 
 ```
 SMA_30 = ts_mean(close,30);
