@@ -74,5 +74,21 @@ Unit Handling: Verify
 NaN Handling: Off
 ```
 
+## Improving alphas
+
+▶  Turnover
+Turnover of an alpha is a metric that measures the daily trading activity
+$${\rm Turnover} = \frac{\text{Dollar Trading Value}}{\text{ Booksize }} = \frac{\text{Value Traded}}{\text{Value Held}} $$
+
+• Increase Decay $\implies$ Reduces the turnover\
+• Reducing turnover. In order to reduce turnover we can add a condition on the trading.
+Instead of trading at each market open, it will trade only when event is True (where adv20
+corresponds to the average daily volume in past 20 days):
+```
+event = volume>adv20;
+alpha = news_cap;
+trade_when(event, alpha, -1)
+```
+
 
 
