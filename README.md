@@ -49,8 +49,21 @@ NaN Handling: Off
 Results from the price weighted average alpha:
 ![results_1](https://github.com/alexisdpc/WorldQuant-alpha-trading/assets/124795834/a733fc99-f811-4c38-b5ab-de0166676607)
 
-
-
+▶ Price weighted average. vwap is the daily volume weighted average price. The following alpha uses vwap to implement Price Reversion:
+```
+(vwap-close)/vwap
+```
+```
+Region: USA 
+Universe: Top3000
+Delay: 1
+Neutralization: Subindustry
+Decay: 15
+Truncation: 0.08
+Pasteurization:  On
+Unit Handling: Verify
+NaN Handling: Off
+```
 
 ## Chinese market
 
