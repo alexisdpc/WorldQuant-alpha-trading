@@ -65,6 +65,29 @@ Unit Handling: Verify
 NaN Handling: Off
 ```
 
+▶  Operating income 
+
+Usually the most important income is the one from operation, since this means the operating efficiency is good. In this alpha,  we take long positions on companies with higher operating income and we take short positions on companies with low operating income. 
+
+We divide by market cap to account for the size of the companies in order to make a fair comparison
+$$\text{Operating yield} = \frac{\text{Operating income}}{\text{Market cap}}$$
+Moreover, the cashflow from operations is better since it takes into account expenses and operating costs. We rank the operational cashflow divided by capitalization over the last 63 days.
+```
+alpha = ts_rank(cashflow_op/cap,60);
+group_rank(alpha, subindustry)
+```
+```
+Region: USA 
+Universe: Top3000
+Delay: 1
+Neutralization: Subindustry
+Decay: 4
+Truncation: 0.08
+Pasteurization:  On
+Unit Handling: Verify
+NaN Handling: On
+```
+
 ## Chinese market
 
 ▶  Volatility of daily turnover in last 20 days.\
