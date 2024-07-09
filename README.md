@@ -1,7 +1,7 @@
 # WorldQuant alpha trading
 
 WorldQuant BRAIN is an online simulation platform to build alpha ($\alpha$) signals and perform backtesting using market data. However, it is hard to find resources and documentation on the use of this platform.
-We present some trading strategies with high Sharpe ratio.
+We present some trading strategies with high Sharpe ratio
 
 ## American market
 
