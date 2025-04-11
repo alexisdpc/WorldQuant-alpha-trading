@@ -115,6 +115,7 @@ NaN Handling: Off
 ## Improving alphas
 
 ▶  **Turnover**: Turnover of an alpha is a metric that measures the daily trading activity
+
 $${\rm Turnover} = \frac{\text{Dollar Trading Value}}{\text{ Booksize }} = \frac{\text{Value Traded}}{\text{Value Held}} $$
 
 • Increase Decay $\implies$ Reduces the turnover\
@@ -128,7 +129,9 @@ trade_when(event, alpha, -1)
 ```
 
 ▶  **Fitness**: Fitness of an alpha is a function of Returns, Turnover \& Sharpe. Fitness is defined as:
+
 $$\text{Fitness} = \text{Sharpe} \sqrt{\frac{|{\rm returns}|  }{ {\rm max}[{\rm turnover},0.125] }}$$
+
 Good alphas generally have high fitness. You can seek to improve the performance of your alphas by increasing Sharpe (or returns) and reducing turnover. The passing requirement for fitness on the BRAIN platform is to be greater than 1.0.
 
 
