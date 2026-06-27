@@ -29,7 +29,7 @@ $$
 The relevant operator is `ts_decay_linear`, a weighted moving average that puts more weight on recent days:
 
 $$
-\texttt{ts\_decay\_linear}(x, d) = \frac{\sum_{k=0}^{d-1} (d-k)\, x_{t-k}}{\sum_{k=0}^{d-1} (d-k)} = \frac{d\,x_t + (d-1)\,x_{t-1} + \cdots + 1\cdot x_{t-d+1}}{d + (d-1) + \cdots + 1}
+f(x, d) = \frac{\sum_{k=0}^{d-1} (d-k)\, x_{t-k}}{\sum_{k=0}^{d-1} (d-k)} = \frac{d\,x_t + (d-1)\,x_{t-1} + \cdots + 1\cdot x_{t-d+1}}{d + (d-1) + \cdots + 1}
 $$
 
 A larger window $d$ produces a smoother, lower-turnover signal at the cost of responsiveness.
@@ -98,7 +98,7 @@ Raw signals often have skewed, scale-dependent distributions. Normalizing them c
 **Rank** maps each value to its cross-sectional percentile in $[0,1]$:
 
 $$
-\texttt{rank}(x_i) = \frac{\#\{\, j : x_j < x_i \,\}}{N}
+\texttt{rank}(x_i) = \frac{1}{N}\sum_{j=1}^{N} \mathbf{1} [\hspace{0.1cm} \texttt{if} \hspace{0.1cm}  x_j \le x_i ]
 $$
 
 This is the most common transform — it is fully robust to outliers because only the ordering matters.
