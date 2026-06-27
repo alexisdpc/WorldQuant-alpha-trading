@@ -98,7 +98,7 @@ Raw signals often have skewed, scale-dependent distributions. Normalizing them c
 **Rank** maps each value to its cross-sectional percentile in $[0,1]$:
 
 $$
-\texttt{rank}(x_i) = \frac{1}{N}\sum_{j=1}^{N} \mathbf{1} [\hspace{0.1cm} \texttt{if} \hspace{0.1cm}  x_j \le x_i ]
+\texttt{rank}(x_i) = \frac{1}{N}\sum_{j=1}^{N} \mathbf{1}\left[ \text{if } x_j \le x_i \right]
 $$
 
 This is the most common transform — it is fully robust to outliers because only the ordering matters.
