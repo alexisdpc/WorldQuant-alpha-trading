@@ -141,20 +141,20 @@ alpha = truncate(rank(signal), 0.05);   /* no position exceeds 5% of book */
 
 Neutralization removes systematic exposures (to the market, a sector, or a risk factor) so the alpha bets only on the residual idiosyncratic signal. This usually lowers volatility and raises Sharpe.
 
-**Group neutralization** subtracts the group mean so each group (e.g. sector, industry) nets to zero:
+**Group neutralization** `group_neutralize` subtracts the group mean so each group (e.g. sector, industry) nets to zero:
 
 $$
-\texttt{group\_neutralize}(x, g)_i = x_i - \frac{1}{\left| G_i \right|}\sum_{j \in G_i} x_j
+\mathrm{GN}(x, g)_i = x_i - \frac{1}{\left| G_i \right|}\sum_{j \in G_i} x_j
 $$
 
 ```
 alpha = group_neutralize(rank(-returns), sector);
 ```
 
-**Regression neutralization** removes the component of the alpha explained by one or more risk factors $f$ by regressing the signal on them and keeping the residual $\varepsilon$:
+**Regression neutralization** `regression_neut` removes the component of the alpha explained by one or more risk factors $f$ by regressing the signal on them and keeping the residual $\varepsilon$:
 
 $$
-x = \beta f + \varepsilon, \qquad \texttt{regression\_neut}(x, f) = \varepsilon = x - \beta f
+x = \beta f + \varepsilon, \qquad RN(x, f) = \varepsilon = x - \beta f
 $$
 
 This is how you make an alpha market-neutral, beta-neutral, or factor-neutral.
