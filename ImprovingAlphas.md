@@ -219,7 +219,7 @@ $$
 **Margin** measures how much profit the alpha extracts per dollar traded — essentially profitability per unit of turnover. It is usually quoted in basis points (bps):
 
 $$
-{\rm Margin} = \frac{\text{Total PnL}}{\text{Total Dollars Traded}} = \frac{\overline{\rm returns}}{\text{Turnover}}\times 10^{4}\ \text{(bps)}
+{\rm Margin} = \frac{\text{Total PnL}}{\text{Total Dollars Traded}} = \frac{\rm Mean returns}{\text{Turnover}}\times 10^{4}\ \text{(bps)}
 $$
 
 A low margin (a few bps) means transaction costs can easily wipe out the edge; a healthy margin gives the alpha room to survive realistic slippage. Reducing turnover (decay, `trade_when`, `hump`) raises margin directly, since the same PnL is earned with fewer trades.
