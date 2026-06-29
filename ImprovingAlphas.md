@@ -122,7 +122,7 @@ $$
 Extreme values can dominate the book and create concentration risk. **Winsorization** clips the signal at $\pm s$ standard deviations from the mean:
 
 $$
-\texttt{winsorize}(x, s):\quad x_i \mapsto \min\!\big(\max(x_i,\ \mu - s\sigma),\ \mu + s\sigma\big)
+\texttt{winsorize}(x, s):\quad x_i \mapsto \min \big(\max(x_i,\ \mu - s\sigma),\ \mu + s\sigma\big)
 $$
 
 **Truncation** caps the maximum weight any single instrument can hold to a fraction $m$ of the book, improving diversification:
