@@ -227,7 +227,7 @@ A low margin (a few bps) means transaction costs can easily wipe out the edge; a
 **Information Coefficient (IC)** measures the predictive power of the signal — the cross-sectional correlation between the alpha's forecast on day $t$ and the realized forward returns on day $t+1$:
 
 $$
-{\rm IC}_t = {\rm corr}\!\left(\text{alpha}_{i,t},\ r_{i,t+1}\right)
+{\rm IC}_t = {\rm corr} \left(\text{alpha}_{i,t},\ r_{i,t+1}\right)
 $$
 
 The headline **mean IC** is the average over all days, and its stability is captured by the **information ratio of the IC**:
