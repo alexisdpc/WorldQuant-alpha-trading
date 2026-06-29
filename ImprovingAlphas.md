@@ -247,7 +247,7 @@ A small but *consistent* positive IC (e.g. 0.02–0.05 with high IR) is often mo
 The headline Sharpe is computed on the full trading universe, but an alpha can earn most of its performance from a handful of large, liquid names while doing nothing — or losing — on the rest. The **sub-universe Sharpe** checks robustness by re-computing Sharpe on a restricted universe (typically the smaller / less liquid subset, e.g. names *outside* the top-tier liquidity bucket):
 
 $$
-{\rm Sharpe}_{\rm sub} = \sqrt{252}\,\frac{\overline{r}^{\,\rm sub}}{\sigma_r^{\rm sub}},
+{\rm Sharpe}_{\rm sub} = \sqrt{252} \frac{\overline{r}^{ \rm sub}}{\sigma_r^{\rm sub}},
 \qquad U_{\rm sub} \subset U_{\rm full}
 $$
 
