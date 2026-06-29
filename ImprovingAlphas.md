@@ -266,13 +266,13 @@ A value close to 1 means the edge generalizes across the universe; a value near 
 A new alpha only adds value if it is **not** already captured by alphas you (or the platform) hold. BRAIN therefore checks the correlation of your alpha's daily PnL against the existing pool:
 
 $$
-\rho_{a,b} = \frac{{\rm Cov}\!\left({\rm PnL}_a,\ {\rm PnL}_b\right)}{\sigma_{{\rm PnL}_a}\,\sigma_{{\rm PnL}_b}}
+\rho_{a,b} = \frac{{\rm Cov} \left({\rm PnL}_a, {\rm PnL}_b \right)}{\sigma_{{\rm PnL}_a} \sigma_{{\rm PnL}_b}}
 $$
 
 The submission constraint is usually that the **maximum** pairwise correlation against the existing set stays below a threshold (commonly **< 0.7**):
 
 $$
-\max_{b\,\in\,{\rm pool}}\ \rho_{a,b} < 0.7
+\max_{b \in {\rm pool}}\ \rho_{a,b} < 0.7
 $$
 
 Two alphas that are individually good but highly correlated contribute almost the same bet; combining low-correlation alphas is what diversifies risk and grows the overall portfolio Sharpe. To *lower* correlation to an existing pool:
