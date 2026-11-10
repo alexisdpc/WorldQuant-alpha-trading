@@ -161,7 +161,7 @@ This is how you make an alpha market-neutral, beta-neutral, or factor-neutral.
 
 ---
 
-### ▶ Putting It Together — A Worked Example
+### ▶ Putting It Together: A Worked Example
 
 A typical "improved" alpha chains several of these operators: build a raw signal, normalize it, neutralize unwanted exposures, smooth to control turnover, and trade conditionally.
 
